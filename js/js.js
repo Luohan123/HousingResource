@@ -12,7 +12,8 @@ var nums = null;
             $(".formal").css({"color":'red'});
         }
         else if(mobile.test(nums)) {
-            $("#formal").html("&#xe636;").addClass("hover");
-            $("#formal").css({"color":'green'});
+            $(".formal").html("&#xe636;").addClass("hover");
+            $(".formal").css({"color":'green'});
         }
 })
+

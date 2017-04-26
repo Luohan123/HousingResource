@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/index.css?v=0.1" rel="stylesheet">
     <!--<link href="css/public.css" rel="stylesheet">-->
     <link href="iconfont/iconfont.css" rel="stylesheet">
 
@@ -76,6 +76,12 @@
                 <div class="house-tit">*</div>
                 <span>小区名称 :</span>
                 <input type="text" class="name" placeholder="请输入小区名称">
+                <div class="house-con">
+                    <span>弓箭坊小区</span>
+                    <span>弓箭坊40号</span>
+                    <span>南京夫子庙</span>
+                    <span>欣才IT学院</span>
+                </div>
                 <!--<div class="icons">&#xe636;</div>-->
                 <span class="icons" id="iconfont"></span>
             </div>
@@ -117,7 +123,7 @@
                 <input type="text" class="type-con" value=""> 厅
                 <input type="text" class="type-con" value=""> 卫
                 <input type="text" class="type-con" value=""> 阳台
-
+                <span class="icon"></span>
             </div>
             <div class="form">
                 <div class="form-tit">
@@ -129,16 +135,16 @@
                 <input type="radio" class="form-con" name="form1">合租
                 <select class="content">
                     <option>选择卧室内容</option>
-                    <option>选择卧室内容1</option>
-                    <option>选择卧室内容2</option>
-                    <option>选择卧室内容3</option>
+                    <option>床</option>
+                    <option>空调</option>
+                    <option>电视</option>
                 </select>
                 <span id="check3"></span>
                 <select class="content1">
                     <option>选择限制条件</option>
-                    <option>选择限制条件1</option>
-                    <option>选择限制条件2</option>
-                    <option>选择限制条件3</option>
+                    <option>主卧</option>
+                    <option>次卧</option>
+                    <option>客厅</option>
                 </select>
                 <span id="check4"></span>
             </div>
@@ -172,19 +178,25 @@
                 <input type="checkbox" class="pay1" name="form1">年付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="checkbox" class="all" name="form1">都可以
             </div>
-            
+
+            <div class="file">
+                <div class="tit">*</div>
+                <span class="font">图片上传：</span>
+                <div class="upload">+</div>
+                <div class="img">
+                    <div class="close">×</div>
+                    <img src="images/logo.png" width="100%" alt="">
+                </div>
+            </div>
+
             <div class="phone">
                 <div class="phone-tit">*</div>
                 <span>手机验证 :</span>
                 <input type="text" class="phone-number" placeholder="请输入手机号">
-                <!--<input type="button" class="send" value="发送短信"><span class="null"></span>-->
                 <span class="formal"></span>
-                <!--<span class="k">手机号码不为空</span>-->
-                <!--<div class="code"></div>-->
-
             </div>
             <div class="demand">总体需求 :</div>
-            <textarea id="need"></textarea>
+            <div id="need"></div>
             <div class="next"><a href="">提交</a></div>
         </div>
     </div>
@@ -217,6 +229,8 @@
 </body>
 </html>
 <script src="js/jquery-3.1.1.min.js"></script>
+<script src="iconfont/iconfont.js"></script>
 <script src="js/js.js"></script>
 <script src="js/position.js"></script>
 <script src="js/check-input.js"></script>
+<script src="js/fuzzy.js"></script>
