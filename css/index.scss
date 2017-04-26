@@ -224,22 +224,28 @@
             font-weight: bold;
             //display: none;
         }
-        .icons{
-          color: green;
-        }
+        //.icons{
+        //  color: green;
+        //}
         .h{
-          color: red;
+            color: red;
         }
+
     }
-    .map{
+    .guide{
         width: 100px;
         height: 30px;
         background: #f2f2f2;
         font-size: 14px;
         margin-left: 156px;
         margin-top: 10px;
+        border-radius: 4px;
         border: none;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
     }
+
     .plate {
         width: 540px;
         height: 38px;
@@ -314,7 +320,6 @@
             font-family: iconfont;
             margin-right: -20px;
             margin-top: -25px;
-            display: block;
             float: right;
         }
     }
@@ -421,7 +426,6 @@
             font-family: iconfont;
             margin-right: -80px;
             margin-top: -25px;
-            //display: block;
             float: right;
         }
     }
@@ -478,7 +482,6 @@
             font-family: iconfont;
             margin-right: -80px;
             margin-top: -25px;
-            //display: block;
             float: right;
         }
     }
@@ -572,7 +575,7 @@
             padding-left: 5px;
             border: 1px solid #d9d9d9;
         }
-        .formal{
+        #formal{
             width: 70px;
             height: 28px;
             margin-left: 10px;
@@ -583,7 +586,7 @@
     .demand{
         width: 120px;
         height: 30px;
-        margin-left: 80px;
+        margin-left: 87px;
         font-size: 14px;
     }
     #need{
@@ -593,7 +596,7 @@
         border:1px solid #f2f2f2;
         overflow: scroll;
     }
-    .next {
+    .submit {
         width: 150px;
         height: 40px;
         background: #ec6c00;
@@ -677,4 +680,10 @@
             margin-top: 25px;
         }
     }
+}
+.hover{
+  color: green;
+}
+.h{
+    color: red;
 }

@@ -82,12 +82,11 @@
                     <span>南京夫子庙</span>
                     <span>欣才IT学院</span>
                 </div>
-                <!--<div class="icons">&#xe636;</div>-->
                 <span class="icons" id="iconfont"></span>
             </div>
 
-            <input type="button" class="map" value="地图导航">
-            <div class="allmap"></div>
+            <div class="guide">地图导航</div>
+            <div id="allmap"></div>
 
             <div class="plate">
                 <div class="plate-tit">
@@ -130,7 +129,7 @@
                     <div class="tit">*</div>
                     <span>出租形式 :</span>
                 </div>
-                <input type="radio" class="form-con" name="form1">整租&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" class="form-con" name="form1"><span class="form2">整租</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;
                 <input type="radio" class="form-con" name="form1">合租
                 <select class="content">
@@ -193,11 +192,11 @@
                 <div class="phone-tit">*</div>
                 <span>手机验证 :</span>
                 <input type="text" class="phone-number" placeholder="请输入手机号">
-                <span class="formal"></span>
+                <span id="formal"></span>
             </div>
             <div class="demand">总体需求 :</div>
             <div id="need"></div>
-            <div class="next"><a href="">提交</a></div>
+            <div class="submit"><a href="">提交</a></div>
         </div>
     </div>
     <div class="footer">
@@ -233,4 +232,6 @@
 <script src="js/js.js"></script>
 <script src="js/position.js"></script>
 <script src="js/check-input.js"></script>
-<script src="js/fuzzy.js"></script>
+
+
+
